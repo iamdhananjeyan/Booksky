@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="navbar">
+<h1>Booksky</h1>
+
+</div>
+<div class="inbox">
+    <div class="bookcontainer">
+    <h2 id="inh2">Rich Dad Poor Dad</h2>
+    <h4><b>Robert</b></h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ut sunt neque ex fuga adipisci vel ad consectetur deserunt. Ad in explicabo fuga aut molestias nemo hic excepturi voluptas voluptatem debitis ipsa nostrum, numquam voluptates? Minima minus porro id. Harum deleniti autem voluptate id eum et, incidunt odio expedita corrupti?</p>
+    <button id="inbtn" onclick="deletebook(event)">Delete</button>
+</div>
+</div>
+<button class="addbtn" id="addpopup" onclick="popup()">+</button>
+<div class="popupoverlay">
+
+</div>
+<div class="popupcontent">
+    <h2>Add Book</h2>
+    <form action="">
+<input type="text" placeholder="Book Title" id="booktitle">
+<input type="text" placeholder="Book Author" id="bookauthor">
+<textarea name="" placeholder="Book Description" id="bookdesc"></textarea>
+<button id="addbook">ADD</button>
+<button id="cancelpopup">CANCEL</button>
+
+    </form>
+
+    
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
